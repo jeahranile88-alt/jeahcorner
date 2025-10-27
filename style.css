@@ -1,0 +1,265 @@
+/* 🌸 General Layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff5fa;
+  color: #555;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* 💖 Floating Hearts Animation */
+.hearts {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.heart {
+  position: absolute;
+  color: #ffb6c1;
+  font-size: 20px;
+  opacity: 0.8;
+  animation: floatHearts 6s linear infinite;
+}
+
+@keyframes floatHearts {
+  0% { transform: translateY(100vh) scale(0.8); opacity: 0.8; }
+  100% { transform: translateY(-10vh) scale(1.2); opacity: 0; }
+}
+
+/* 💕 Header */
+header {
+  background-color: #ffd9e8;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #ffb6c1;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.4em;
+  color: #e75480;
+  font-family: 'Playfair Display', serif;
+}
+
+/* 🌷 Bubble Buttons */
+.bubble-btn {
+  background-color: #ffe6ef;
+  border: 2px solid #ffb6c1;
+  border-radius: 25px;
+  padding: 6px 15px;
+  color: #e75480;
+  text-decoration: none;
+  margin: 0 5px;
+  font-weight: bold;
+  box-shadow: 0 3px 5px rgba(255, 182, 193, 0.4);
+  transition: all 0.3s ease;
+}
+
+.bubble-btn:hover {
+  background-color: #ffb6c1;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* 🧁 Hero Section */
+#hero {
+  background: linear-gradient(#ffe6ef, #fff);
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+#hero h1 {
+  font-family: 'Playfair Display', serif;
+  color: #e75480;
+  font-size: 2.5em;
+}
+
+/* 🌼 About Section */
+#about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff0f7;
+  padding: 40px 20px;
+}
+
+#about img.profile {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 10px 20px;
+  border: 4px solid #ffcce0;
+}
+
+#about .text {
+  max-width: 500px;
+  background-color: #ffe6ef;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 🍓 Gallery */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.grid img {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 15px rgba(255, 182, 193, 0.4);
+}
+
+/* 💫 Videos */
+.video-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+}
+
+video {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 🌸 Footer */
+footer {
+  background-color: #ffd9e8;
+  padding: 15px;
+  text-align: center;
+  color: #a15a75;
+  border-top: 3px solid #ffb6c1;
+  font-size: 14px;
+}
+.profile {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid pink;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(255, 182, 193, 0.5);
+}
+header {
+  background: #ffe6ef;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #ffb6c1;
+}
+
+header h1 {
+  color: #ff4da6;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d63384;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #ff4da6;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffeef4;
+  color: #444;
+}
+
+header {
+  background-color: #ffcce0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  border-bottom: 2px solid #f8a5c2;
+}
+
+header h1 {
+  color: #e75480;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+nav a {
+  color: #e75480;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.gallery {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.gallery h2 {
+  color: #444;
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+figure {
+  display: inline-block;
+  background: #fff0f5;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+figure img {
+  width: 400px; /* Adjust as needed */
+  height: auto;
+  border-radius: 10px;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+}
+
+.footer-text {
+  margin-top: 20px;
+  color: #b36b7d;
+}
+/* Add this to style.css */
+video {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  height: auto;
+}
